@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="Client.Menu.AdminPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Client.Menu"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="600">
+    <UserControl.Background>
+        <ImageBrush ImageSource="../Resources/BG2.jpg"/>
+    </UserControl.Background>
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="535,93,0,0" VerticalAlignment="Top" Width="44" Click="btnBack_Click"/>
+        <GroupBox x:Name="groupBox" Header="Event" HorizontalAlignment="Left" Margin="299,116,0,0" VerticalAlignment="Top" Height="274" Width="291" Foreground="White"/>
+        <GroupBox x:Name="groupBox1" Header="Statistics" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="380" Width="284"/>
+        <Button x:Name="btnAddevent" Content="Add" HorizontalAlignment="Left" Margin="535,361,0,0" VerticalAlignment="Top" Width="44" Click="btnAddevent_Click"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="20,33,0,0" TextWrapping="Wrap" Text="Scholarships" VerticalAlignment="Top" Width="264" Background="#FF494747" TextAlignment="Center" Foreground="White"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="20,146,0,0" TextWrapping="Wrap" Text="Exchanges" VerticalAlignment="Top" Width="264" Background="#FF494747" TextAlignment="Center" Foreground="White"/>
+        <TextBlock x:Name="txbSAccepted" HorizontalAlignment="Left" Margin="20,74,0,0" TextWrapping="Wrap" Text="Accepted: " VerticalAlignment="Top" Width="217" Foreground="White"/>
+        <TextBlock x:Name="txbSRejected" HorizontalAlignment="Left" Margin="20,95,0,0" TextWrapping="Wrap" Text="Rejected: " VerticalAlignment="Top" Width="217" Foreground="White"/>
+        <TextBlock x:Name="txbSPending" HorizontalAlignment="Left" Margin="20,116,0,0" TextWrapping="Wrap" Text="Pending: " VerticalAlignment="Top" Width="217" Foreground="White"/>
+        <TextBlock x:Name="txbEAccepted" HorizontalAlignment="Left" Margin="20,188,0,0" TextWrapping="Wrap" Text="Accepted: " VerticalAlignment="Top" Width="217" Foreground="White"/>
+        <TextBlock x:Name="txbERejected" HorizontalAlignment="Left" Margin="20,209,0,0" TextWrapping="Wrap" Text="Rejected: " VerticalAlignment="Top" Width="217" Foreground="White"/>
+        <TextBlock x:Name="txbEPending" HorizontalAlignment="Left" Margin="20,230,0,0" TextWrapping="Wrap" Text="Pending: " VerticalAlignment="Top" Width="217" Foreground="White"/>
+        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="20,255,0,0" TextWrapping="Wrap" Text="Funds" VerticalAlignment="Top" Width="264" Background="#FF494747" TextAlignment="Center" Foreground="White"/>
+        <TextBlock x:Name="txbFAccepted" HorizontalAlignment="Left" Margin="20,297,0,0" TextWrapping="Wrap" Text="Accepted: " VerticalAlignment="Top" Width="217" Foreground="White"/>
+        <TextBlock x:Name="txbFRejected" HorizontalAlignment="Left" Margin="20,318,0,0" TextWrapping="Wrap" Text="Rejected: " VerticalAlignment="Top" Width="217" Foreground="White"/>
+        <TextBlock x:Name="txbFPending" HorizontalAlignment="Left" Margin="20,339,0,0" TextWrapping="Wrap" Text="Pending: " VerticalAlignment="Top" Width="217" Foreground="White"/>
+        <TextBlock x:Name="txbFA" HorizontalAlignment="Left" Margin="20,360,0,0" TextWrapping="Wrap" Text="Total Amount Given: " VerticalAlignment="Top" Width="217" Foreground="White"/>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="315,33,0,0" TextWrapping="Wrap" Text="Contributions" VerticalAlignment="Top" Width="264" Background="#FF494747" TextAlignment="Center" Foreground="White"/>
+        <TextBlock x:Name="txbCA" HorizontalAlignment="Left" Margin="315,62,0,0" TextWrapping="Wrap" Text="Total Contributions: " VerticalAlignment="Top" Width="217" Foreground="White"/>
+        <TextBlock x:Name="txbFtotal" HorizontalAlignment="Left" Margin="20,276,0,0" TextWrapping="Wrap" Text="Total: " VerticalAlignment="Top" Width="217" Foreground="White"/>
+        <TextBlock x:Name="txbEtotal" HorizontalAlignment="Left" Margin="20,167,0,0" TextWrapping="Wrap" Text="Total: " VerticalAlignment="Top" Width="217" Foreground="White"/>
+        <TextBlock x:Name="txbStotal" HorizontalAlignment="Left" Margin="20,54,0,0" TextWrapping="Wrap" Text="Total: " VerticalAlignment="Top" Width="217" Foreground="White"/>
+        <Label x:Name="label_Copy" Content="Name:" HorizontalAlignment="Left" Margin="315,129,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox x:Name="txbName" HorizontalAlignment="Left" Height="23" Margin="370,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FF494747" Foreground="White"/>
+        <Label x:Name="label_Copy1" Content="Starts:" HorizontalAlignment="Left" Margin="315,164,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="label_Copy2" Content="Expires:" HorizontalAlignment="Left" Margin="315,199,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="label_Copy3" Content="Description:" HorizontalAlignment="Left" Margin="315,229,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox x:Name="txbDesc" HorizontalAlignment="Left" Height="95" Margin="315,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="264" Background="#FF494747" Foreground="White"/>
+        <DatePicker x:Name="dteExpires" HorizontalAlignment="Left" Margin="370,201,0,0" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="dteStarts" HorizontalAlignment="Left" Margin="370,167,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnMembers" Content="Members" HorizontalAlignment="Left" Margin="430,93,0,0" VerticalAlignment="Top" Width="100" Background="#FFD6D8F5" Foreground="White" FontWeight="Bold" Click="btnMembers_Click"/>
+        <Button x:Name="btnMinutes" Content="Minutes" HorizontalAlignment="Left" Margin="325,93,0,0" VerticalAlignment="Top" Width="100" Background="#FFD6D8F5" Foreground="White" FontWeight="Bold" Click="btnMinutes_Click"/>
+
+    </Grid>
+</UserControl>
